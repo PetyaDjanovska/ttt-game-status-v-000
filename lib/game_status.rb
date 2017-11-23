@@ -30,7 +30,7 @@ def won? (board)
           return win_combination
         else
           win_combination.each do |position|
-            if position_taken? (win_combination, position)
+            if position_taken?(win_combination, position)
               false
             end
         end
