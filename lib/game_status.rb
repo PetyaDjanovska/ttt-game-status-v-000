@@ -25,7 +25,7 @@ def won? (board)
    position_2 = board[win_index_2]
    position_3 = board[win_index_3]
 
-       if [position_1, position_2, position_3].contains? {|symbol| symbol.nil? || symbol == " "}
+       if [position_1, position_2, position_3].include? {|symbol| symbol.nil? || symbol == " "}
          false
        elsif
           [position_1, position_2, position_3].all? {|symbol| symbol == "X"} ||
