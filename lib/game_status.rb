@@ -29,8 +29,7 @@ def won? (board)
            [position_1, position_2, position_3].all? {|symbol| symbol == "O"}
           return win_combination
         else
-              false
+            false
         end
       end
     end
-  end
