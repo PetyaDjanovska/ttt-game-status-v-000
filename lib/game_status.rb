@@ -25,16 +25,11 @@ def won? (board)
    position_2 = board[win_index_2]
    position_3 = board[win_index_3]
 
-
-        #if position_taken?(board,win_index_1) &&
-        #      position_taken?(board, win_index_2) &&
-        #      position_taken?(board, win_index_3)
-        #        return false
-        if [position_1, position_2, position_3].all? {|symbol| symbol == "X"} ||
-           [position_1, position_2, position_3].all? {|symbol| symbol == "O"}
-          return win_combination
-        else
-          false
-        end
+    if [position_1, position_2, position_3].all? {|symbol| symbol == "X"} ||
+       [position_1, position_2, position_3].all? {|symbol| symbol == "O"}
+      return win_combination
+    else
+      false
+    end
   end
 end
